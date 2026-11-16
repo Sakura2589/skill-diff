@@ -11,6 +11,7 @@
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB?style=flat-square)
 ![Runtime dependencies: 0](https://img.shields.io/badge/runtime_dependencies-0-11664e?style=flat-square)
 ![License: MIT](https://img.shields.io/badge/license-MIT-11664e?style=flat-square)
+[![CI](https://github.com/Sakura2589/skill-diff/actions/workflows/ci.yml/badge.svg)](https://github.com/Sakura2589/skill-diff/actions/workflows/ci.yml)
 
 </div>
 
@@ -36,6 +37,8 @@ Open `review.html` in your browser. The report is one self-contained file with n
 A generated demo is also included at [docs/demo.html](docs/demo.html); download it to view it locally.
 
 For a reusable command, install from this checkout with `python -m pip install .`, then use `skill-diff` in place of `python -m skill_diff`. This project has **not been published to PyPI**; do not assume similarly named packages are this project.
+
+Prefer a downloadable package? The [v0.1.0 alpha release](https://github.com/Sakura2589/skill-diff/releases/tag/v0.1.0) includes a Python wheel, a source ZIP, and SHA-256 checksums. Install the downloaded wheel with `python -m pip install skill_diff_review-0.1.0-py3-none-any.whl`.
 
 The included demo has an **unchanged SKILL.md**, three changed files, and four new signals:
 

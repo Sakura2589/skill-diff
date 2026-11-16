@@ -33,6 +33,8 @@ python -m skill_diff diff examples/before examples/after --format html -o review
 
 想使用独立命令：在项目根目录运行 `python -m pip install .`，之后可用 `skill-diff` 代替 `python -m skill_diff`。目前未发布 PyPI，名称相近的包不代表本项目。
 
+也可直接下载 [v0.1.0 预发布版](https://github.com/Sakura2589/skill-diff/releases/tag/v0.1.0) 中的 wheel 安装包、源码 ZIP 和 SHA-256 校验文件。安装下载后的 wheel：`python -m pip install skill_diff_review-0.1.0-py3-none-any.whl`。
+
 ## 能解决什么问题
 
 | 场景 | 输出 |
