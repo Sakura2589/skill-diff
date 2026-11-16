@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skill-diff-review"
+version = "0.1.0"
+description = "Review what changed in an AI skill, including the files behind SKILL.md."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "SkillDiff contributors"}]
+keywords = ["agent-skills", "ai", "diff", "code-review", "cli"]
+classifiers = ["Development Status :: 3 - Alpha", "Environment :: Console", "Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+dependencies = []
+
+[project.scripts]
+skill-diff = "skill_diff.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Sakura2589/skill-diff"
+Issues = "https://github.com/Sakura2589/skill-diff/issues"
+
+[tool.setuptools.packages.find]
+include = ["skill_diff*"]
+
+[tool.setuptools.package-data]
+skill_diff = ["report.css"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

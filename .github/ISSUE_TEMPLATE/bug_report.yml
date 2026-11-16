@@ -1,0 +1,21 @@
+name: Bug report
+description: Report an incorrect diff, missed reference, or CLI problem
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include the command and small sanitized before/after files. Never include credentials or private snapshots.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual result
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Version and environment
+      placeholder: SkillDiff version, Python version, operating system
